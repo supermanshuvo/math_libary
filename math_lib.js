@@ -30,4 +30,4 @@ let multiply = (...numbers)=>{
 };
 
 // Out put the value of Multiplication
-console.log(multiply(6));
+console.log(multiply(6,2,3));
