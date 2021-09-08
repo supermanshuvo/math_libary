@@ -31,3 +31,17 @@ let multiply = (...numbers)=>{
 
 // Out put the value of Multiplication
 console.log(multiply(6,2,3));
+
+// Division Function 
+let div = (...numbers)=>{
+    let division = 0;
+    if(!numbers[1]){
+        numbers[1]=1;
+        console.log(numbers[1])
+    }
+    division = parseFloat(numbers[0])/parseFloat(numbers[1]);
+    return division;
+};
+
+// Out put the value of Division
+console.log(div(4,2))
