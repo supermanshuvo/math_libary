@@ -34,9 +34,8 @@ console.log(multiply(6,2,3));
 // Division Function 
 let div = (...numbers)=>{
     let result = 0;
-    if(!numbers[1]){
+    if(!numbers[1]){  //If arguments value is NaN, Undefined or 0  
         numbers[1]=1;
-        console.log(numbers[1])
     }
     result = parseFloat(numbers[0])/parseFloat(numbers[1]);
     return result;
