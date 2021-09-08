@@ -14,9 +14,9 @@
 
 // Addition Function
 let add = (...numbers)=>{
-    let sum = 0;
-    numbers.forEach(el => sum+=parseFloat(el));
-    return sum;
+    let result = 0;
+    numbers.forEach(el => result+=parseFloat(el));
+    return result;
 };
 
 // Out put the value of add function
@@ -24,9 +24,9 @@ console.log(add(1,2,3,3));
 
 // Multiplication Function
 let multiply = (...numbers)=>{
-    let multiplication = 1;
-    numbers.forEach(el => multiplication*=parseFloat(el));
-    return multiplication;
+    let result = 1;
+    numbers.forEach(el => result*=parseFloat(el));
+    return result;
 };
 
 // Out put the value of Multiplication
@@ -34,14 +34,23 @@ console.log(multiply(6,2,3));
 
 // Division Function 
 let div = (...numbers)=>{
-    let division = 0;
+    let result = 0;
     if(!numbers[1]){
         numbers[1]=1;
         console.log(numbers[1])
     }
-    division = parseFloat(numbers[0])/parseFloat(numbers[1]);
-    return division;
+    result = parseFloat(numbers[0])/parseFloat(numbers[1]);
+    return result;
 };
 
 // Out put the value of Division
 console.log(div(4,2))
+
+
+let sub=(...numbers)=>{
+    let result=0;
+    result = parseFloat(numbers[0])-parseFloat(numbers[1]);
+    return result;
+}
+
+console.log(sub(5,6));
