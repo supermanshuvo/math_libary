@@ -17,14 +17,16 @@ class Math_lib{
     add (...numbers){
         let result = 0;
         numbers.forEach(el => result+=parseFloat(el));
-        return result;
+        console.log(result.toFixed(2));
+        return this;
     }
     
     // Multiplication Function
     multiply(...numbers){
         let result = 1;
         numbers.forEach(el => result*=parseFloat(el));
-        return result;
+        console.log(result.toFixed(2));
+        return this;
     }
     
     // Division Function 
@@ -34,13 +36,15 @@ class Math_lib{
             numbers[1]=1;
         }
         result = parseFloat(numbers[0])/parseFloat(numbers[1]);
-        return result;
+        console.log(result.toFixed(2));
+        return this;
     }
     
     // Subtraction Function  
     sub(...numbers){
         let result=0;
         result = parseFloat(numbers[0])-parseFloat(numbers[1]);
-        return result;
+        console.log(result.toFixed(2));
+        return this;
     }
 }
