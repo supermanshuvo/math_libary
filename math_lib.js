@@ -48,3 +48,5 @@ class Math_lib{
         return this;
     }
 }
+let m = new Math_lib();
+console.log(m.add(12,26).div(6,2).multiply(2,3).sub(2,3));
