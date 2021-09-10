@@ -50,3 +50,35 @@ class Math_lib{
 }
 let m = new Math_lib();
 console.log(m.add(12,26).div(6,2).multiply(2,3).sub(2,3)); */
+
+
+let Obj = {
+    result: 0,
+    add:function(...numbers){
+        for(let i=0;i<arguments.length;i++){
+            this.result+=numbers[i];
+        }
+        return this;
+    },
+    multiply:function(...numbers){
+        for(let i=0;i<arguments.length;i++){
+            this.result*=numbers[i];
+        }
+        return this;
+    },
+    subtract:function(...numbers){
+        for(let i=0;i<arguments.length;i++){
+            this.result*=numbers[i];
+        }
+        return this;
+    },
+    divide:function(...numbers){
+        for(let i=0;i<arguments.length;i++){
+            this.result/=numbers[i];
+        }
+        return this;
+    }
+
+};
+Obj.add(5, 10).multiply(6).subtract(10, 30, 8).divide(2);
+console.log(Obj.result);
