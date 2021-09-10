@@ -7,8 +7,8 @@
   ---------------
   # Addition
   # Multiplication
-  # Division
   # Subtraction
+  # Division
 */
 let Obj = {
     result: 0,

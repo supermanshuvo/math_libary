@@ -7,8 +7,8 @@
   ---------------
   # Addition
   # Multiplication
-  # Division
   # Subtraction
+  # Division
 */
 function Math_lib(){
     let math = Object.create(Math_lib.prototype);
