@@ -30,7 +30,7 @@ Math_lib.prototype={
     },
     subtract:function(...numbers){
         for(let i=0;i<arguments.length;i++){
-            this.result*=numbers[i];
+            this.result-=numbers[i];
         }
         return this;
     },
