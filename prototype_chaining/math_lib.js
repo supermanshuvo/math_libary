@@ -10,11 +10,8 @@
   # Subtraction
   # Division
 */
-function Math_lib(){
-    let math = Object.create(Math_lib.prototype);
-    return math;
-}
-Math_lib.prototype={
+function Math_lib(){}
+/* Math_lib.prototype={
     result : 0,
     add(...numbers){
         for(let i=0;i<arguments.length;i++){
@@ -41,8 +38,9 @@ Math_lib.prototype={
         return this;
     }
 
-}
+} */
+
 // console.log(Math_lib.prototype);
-const math = Math_lib();
-math.add(5, 10).multiply(6).subtract(10, 30, 8).divide(2);
+// const math = Math_lib();
+// math.add(5, 10).multiply(6).subtract(10, 30, 8).divide(2);
 console.log(math.result);
